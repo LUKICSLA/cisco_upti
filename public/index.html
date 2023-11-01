@@ -1,89 +1,163 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
+<html lang="sk" class="sm:scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Bc. Lukáš Maár">
+	<meta name="description" content="cisco akedemia upti">
+	<meta name="keywords" content="cisco, akedemia, upti">
+    <title>UPTI CISCO Akadémia</title>
+    <link rel="stylesheet" href="css/style.css">
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+        alert("Web zatiaľ nemá funkčné všetky linky, ide iba o ukážku prvotného dizajnu.");
     </script>
-  </body>
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-teal-700 text-white sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-medium">
+                <a href="">📡 CISCO Academy</a>
+            </h1>
+            <div>
+                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+                    &#9776;
+                </button>
+                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                    <a href="" class="hover:opacity-90">NetAcad</a>
+                    <a href="" class="hover:opacity-90">Programy</a>
+                    <a href="" class="hover:opacity-90">Databáza absolventov</a>
+                    <a href="" class="hover:opacity-90">Kontakt</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+        <section id="netacad" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+                    Chceš získať <span class="text-indigo-700 dark:text-indigo-300">medzinárodne</span> uznávaný certifikát?
+                </h2>
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+                    Cieľom programu je predovšetkým rozvoj globálnej vzdelávacej iniciatívy na Slovensku a snaha riešiť problém nedostatku špecialistov, ktorí majú know-how potrebné na projektovanie, realizáciu a údržbu komunikačných infraštruktúr modernej informačne orientovanej spoločnosti.
+                </p>
+            </article>
+            <img class="w-1/2" weight="400" height="400" src="./img/cisco.png" alt="cisco">
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        <section id="programy" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                CCNA programy
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="./img/networking.png" alt="ccna1" class="w-1/2 mb-6">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">CCNA 1</h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">132 €</p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Text</p>
+                </li>
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="./img/networking.png" alt="ccna2" class="w-1/2 mb-6">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">CCNA 2</h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">162 €</p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Text</p>
+                </li>
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="./img/networking.png" alt="cca3" class="w-1/2 mb-6">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">CCNA 3</h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">174 €</p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Text</p>
+                </li>
+				<li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img src="./img/networking.png" alt="ccn4" class="w-1/2 mb-6">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">CCNA 4</h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">198 €</p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Text</p>
+                </li>
+            </ul>
+            <p class="text-2xl text-slate-700 dark:text-slate-400">
+                <b>Údaje potrebné pre platbu:</b><br>
+                Číslo účtu: SK67 8180 0000 0070 0046 0260<br>
+                Konštantný symbol: 0308<br>
+                Variabilný symbol: 7262223369<br>
+                Do správy pre príjemcu uveďte meno a priezvisko účastníka!<br><br>
+
+                <b>Úplná adresa príjemcu:</b><br>
+                Univerzita Sv. Cyrila a Metoda v Trnave<br>
+                Fakulta prirodných vied<br>
+                Nám. J. Herdu 2<br>
+                917 01 Trnava<br>
+            </p>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        <section id="referencie" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Čo o kurzoch napísali <span class="text-indigo-700 dark:text-indigo-300">absolventi</span>?
+            </h2>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Prvý semester bol síce trochu ťažší, ale štúdium mi dalo super znalosti a skúsenosti do života. Oceňujem tiež praktickú výučbu ...
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212; Ferko Mrkvička, študent prvého ročníka APIN
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Som rád, že som si vybral CISCO akadémiu práve na našom ústave.</p>
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212; Jožko Mrkvička, študent prvého ročníka APIN
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Spočiatku som vôbec nechápala siete a do kurzu som sa prihlásila ako úplný nováčik, ale na kurze sme mali veľmi ochotného vyučujúceho, ktorý nám vedel danú problematiku vysvetliť.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212; Klaudia Vymyslená, študentka druhého ročníka APIN
+                </figcaption>
+            </figure>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        <section id="kontakt" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Ešte váhaš? <span class="text-indigo-700 dark:text-indigo-300">Napíš nám</span>!
+            </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="subject">Meno a priezvisko</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Meno Priezvisko" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" />
+                <label for="message">Správa</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Placeholder správy" required
+                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
+                <button class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Odošli</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>UPTI FPV UCM</h2>
+                Adresa 1<br>
+                Adresa 2<br>
+                Email: <a href="">kontaktny@email.sk</a><br>
+                Telefón: <a href="">+4210000000000</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="https://www.figma.com/file/59nVjy2pPgJNKVa07Cuvsd/WDT---Wireframe-UPTI-CISCO-webu?type=design&node-id=332%3A384&mode=design&t=AEdjTWEBbrtlv1Yq-1" class="hover:opacity-90">Figma dizajn</a>
+                <a href="" class="hover:opacity-90">Link 2</a>
+                <a href="" class="hover:opacity-90">Link 3</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span id="year">2023</span> Bc. Lukáš Maár</p>
+            </div>
+        </section>
+    </footer>
+</body>
 </html>
