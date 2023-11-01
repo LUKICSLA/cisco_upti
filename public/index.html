@@ -131,11 +131,23 @@
                 Ešte váhaš? <span class="text-indigo-700 dark:text-indigo-300">Napíš nám</span>!
             </h2>
             <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
-                <label for="subject">Meno a priezvisko</label>
-                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Meno Priezvisko" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" />
-                <label for="message">Správa</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Placeholder správy" required
-                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
+                <label for="menopriezvisko" title="Uveď prosím svoje meno a priezvisko" autofocus>Meno a priezvisko</label>
+                <input type="text" id="menopriezvisko" name="menopriezvisko" required minlength="10" maxlength="60" placeholder="Ferko Mrkvička" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" />
+                <label for="program">Študijný program</label>
+                <select id="program" name="program" required title="Vyber prosím aký študijný program navštevuješ" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none">
+                    <option value="1APINBC">prvý ročník Bc.</option>
+                    <option value="2APINBC">druhý ročník Bc.</option>
+                    <option value="3APINBC">tretí ročník Bc.</option>
+                    <option value="1APINMGR">prvý ročník Mgr.</option>
+                    <option value="2APINMGR">druhý ročník Mgr.</option>
+                </select>
+                <label for="forma">Forma štúdia</label>
+                <select id="forma" name="forma" required title="Vyber prosím v akej forme štúdia študuješ" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none">
+                    <option value="den">denná</option>
+                    <option value="ext">externá</option>
+                </select>
+                <label for="sprava">Správa</label>
+                <textarea name="sprava" id="sprava" required cols="30" rows="10" minlength="10" maxlength="255" placeholder="Placeholder správy" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
                 <button class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Odošli</button>
             </form>
         </section>
