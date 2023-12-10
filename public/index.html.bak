@@ -7,6 +7,7 @@
 	<meta name="description" content="cisco akedemia upti">
 	<meta name="keywords" content="cisco, akedemia, upti">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <title>UPTI CISCO Akadémia</title>
     <script>alert("Web zatiaľ nemá funkčné všetky linky, ide iba o ukážku prvotného dizajnu.");</script>
 </head>
@@ -21,10 +22,10 @@
                     &#9776;
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
-                    <a href="" class="hover:opacity-90">NetAcad</a>
-                    <a href="" class="hover:opacity-90">Programy</a>
-                    <a href="" class="hover:opacity-90">Databáza absolventov</a>
-                    <a href="" class="hover:opacity-90">Kontakt</a>
+                    <a href="netacad.html" class="hover:opacity-90">NetAcad</a>
+                    <a href="programy.html" class="hover:opacity-90">Programy</a>
+                    <a href="databaza.html" class="hover:opacity-90">Databáza absolventov</a>
+                    <a href="kontakt.html" class="hover:opacity-90">Kontakt</a>
                 </nav>
             </div>
         </section>
